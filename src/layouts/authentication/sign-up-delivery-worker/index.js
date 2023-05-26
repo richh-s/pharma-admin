@@ -105,44 +105,31 @@ function Cover() {
           fullWidth
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Join Hakime
+            Add new medicine
           </MDTypography>
           <MDTypography display="block" variant="button" color="white" my={1}>
-            Enter all the required fields to register a Delivery person
+            Enter all the required fields to register new medicine
           </MDTypography>
         </MDBox>
-        <MDBox pt={4} pb={3} px={3}>
+        <MDBox pt={10} pb={4} px={5}>
   <MDBox component="form" role="form">
     
-        <MDBox mb={2}>
-          <MDInput type="text" label="Full name" variant="standard"   onChange = {(e)=>setFullName(e.target.value)} fullWidth/>
+        <MDBox mb={4}>
+          <MDInput type="text" label="Medicine name" variant="standard"   onChange = {(e)=>setFullName(e.target.value)} fullWidth/>
         </MDBox>
-        <MDBox mb={2}>
-          <MDInput type="email" label="Email" variant="standard" onChange = {(e)=>setEmail(e.target.value)} fullWidth />
+        <MDBox mb={4}>
+          <MDInput type="email" label="Made in " variant="standard" onChange = {(e)=>setEmail(e.target.value)} fullWidth />
         </MDBox>
-        <MDBox mb={2}>
-          <MDInput type="text" label="Phone no" variant="standard" onChange = {(e)=>setPhoneNo(e.target.value)} fullWidth />
+        <MDBox mb={4}>
+          <MDInput type="date" label="Production date" variant="standard" onChange = {(e)=>setPhoneNo(e.target.value)} fullWidth />
         </MDBox>
-        <MDBox mb={2}>
-          <MDInput type="text" label="City" variant="standard" onChange = {(e)=>setCity(e.target.value)} fullWidth/>
-        </MDBox>
-       
-        <MDBox mb={2}>
-          <MDInput type="text" label="Longitude" variant="standard"   onChange = {(e)=>setLongtiude(e.target.value)} fullWidth/>
-        </MDBox>
-       
-        <MDBox mb={2}>
-          <MDInput type="text" label="Location" variant="standard" fullWidth onChange = {(e)=>setLocation(e.target.value)} />
-        </MDBox>
-      
-       
-        <MDBox mb={2}>
-          <MDInput type="text" label="Latitude" variant="standard" fullWidth onChange = {(e)=>setLatitude(e.target.value)}/>
+        <MDBox mb={4}>
+          <MDInput type="date" label="Expire date" variant="standard" onChange = {(e)=>setCity(e.target.value)} fullWidth/>
         </MDBox>
 
-        <MDBox mb={2}>
+        <MDBox mb={4}>
           
-          <MDInput type="text" label="profile image" variant="standard" fullWidth onChange = {(e)=>setProfilePicture(e.target.value)} />
+          <MDInput type="file" label=" image" variant="standard" fullWidth onChange = {(e)=>setProfilePicture(e.target.value)} />
         </MDBox>
     <MDBox mt={4} mb={1}>
       <MDButton variant="gradient" color="info" fullWidth onClick={handleSubmit} >

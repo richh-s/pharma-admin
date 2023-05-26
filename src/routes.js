@@ -38,14 +38,14 @@ const routes = [
     route: "/billing",
     component: <Billing />,
   },
-  {
-    type: "collapse",
-    name: "Medcines",
-    key: "advertisment",
-    icon: <Icon fontSize="small">ad_units</Icon>,
-    route: "/advertisment",
-    component: <Advertisment />,
-  },
+  // {
+  //   type: "collapse",
+  //   name: "Medcines",
+  //   key: "advertisment",
+  //   icon: <Icon fontSize="small">ad_units</Icon>,
+  //   route: "/advertisment",
+  //   component: <Advertisment />,
+  // },
 
   {
     type: "collapse",
@@ -72,14 +72,14 @@ const routes = [
   //   route: "/authentication/sign-up-pharmacy",
   //   component: <SignUpPharmacy />,
   // },
-  // {
-  //   type: "collapse",
-  //   name: "Delivery Workers",
-  //   key: "sign-up-delivery-person",
-  //   icon: <Icon fontSize="small">assignment</Icon>,
-  //   route: "/authentication/sign-up-delivery-person",
-  //   component: <SignUpDeliveryPerson/>,
-  // },
+   {
+     type: "collapse",
+     name: "Medicine",
+     key: "medicine",
+     icon: <Icon fontSize="small">assignment</Icon>,
+     route: "/authentication/sign-up-delivery-person",
+     component: <SignUpDeliveryPerson/>,
+   },
   {
     type: "collapse",
     name: "Profile",

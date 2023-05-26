@@ -1,27 +1,18 @@
 import {useQuery, gql} from '@apollo/client';
 
 export const GET_ORDERS = gql`
-   query GET_ORDERS {
-        orders {
-            id
-          user {
-            full_name
-          }
-          pharmacy {
-            name
-            medicines {
-              name
-            }
-          }
-          deliverer {
-            full_name
-          }
-          order_code
-          status
-          total_cost
-        }
-      
-
-  }`;
+query GET_ORDERS {
+  orders(order_by: {created_at: asc}, where: {pharmacy_id: {_eq: 10}}) {
+    created_at
+    id
+    distance
+    user {
+      full_name
+    }
+    prescription_paper_image {
+      url
+    }
+  }
+}`;
 
   
